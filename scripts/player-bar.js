@@ -14,7 +14,7 @@
     const nextSong = album.songs[nextSongIndex];
     helper.playPauseAndUpdate(nextSong);
   });
-
+   
   $('button#previous').on('click', function(){
     if (player.playState !== 'playing') { return; }
 
