@@ -1,6 +1,6 @@
 {
   $('button#play-pause').on('click', function() {
-    player.playPause();
+    helper.playPauseAndUpdate();
     $(this).attr('playState', player.playState);
   });
 
@@ -14,7 +14,7 @@
     const nextSong = album.songs[nextSongIndex];
     helper.playPauseAndUpdate(nextSong);
   });
-   
+
   $('button#previous').on('click', function(){
     if (player.playState !== 'playing') { return; }
 
